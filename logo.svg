@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW (OEM Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12.7mm" height="12.7mm" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 0.3953 0.3953"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+      <mask id="id0">
+        <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="0.1909" y1="0.2037" x2="0.1877" y2="0.2955">
+         <stop offset="0" stop-opacity="1" stop-color="white"/>
+         <stop offset="1" stop-opacity="0" stop-color="white"/>
+        </linearGradient>
+       <rect fill="url(#id1)" x="0.1514" y="0.2661" width="0.0774" height="0.0361"/>
+      </mask>
+     <mask id="id2">
+       <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="0.1264" y1="0.3456" x2="0.1781" y2="0.2065">
+        <stop offset="0" stop-opacity="1" stop-color="white"/>
+        <stop offset="1" stop-opacity="0" stop-color="white"/>
+       </linearGradient>
+      <rect fill="url(#id3)" x="0.1506" y="0.1909" width="0.0456" height="0.0448"/>
+     </mask>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2766690748768">
+   <rect fill="#cf1f25" width="0.3953" height="0.3953" rx="0.0659" ry="0.0659"/>
+   <g>
+    <path fill="#FEFEFE" fill-rule="nonzero" d="M0.3004 0.2984c-0.0054,-0.0094 -0.0173,-0.0128 -0.0268,-0.0077 -0.0081,0.0043 -0.0173,0.0067 -0.027,0.0067 -0.0164,0 -0.0313,-0.0069 -0.0418,-0.018 0.0204,-0.0003 0.0395,-0.0061 0.0558,-0.0159 0,-0 0.0001,-0 0.0001,-0.0001 0.0022,-0.0013 0.0043,-0.0027 0.0064,-0.0042 0,-0 0.0001,-0.0001 0.0002,-0.0001 0.0159,-0.0119 0.0281,-0.031 0.0273,-0.0524 -0.0021,-0.0556 -0.0508,-0.0625 -0.0693,-0.062 -0.0417,0.0011 -0.0692,0.0328 -0.0734,0.0641 -0.0087,-0.0111 -0.0139,-0.0251 -0.0139,-0.0402 0,-0.036 0.0292,-0.0653 0.0653,-0.0653 0.0061,0 0.012,0.0008 0.0177,0.0024 0.0099,0.0028 0.0205,-0.0012 0.0256,-0.0101l0.0007 -0.0012c0.0072,-0.0124 0.0008,-0.0284 -0.013,-0.0324 -0.0098,-0.0029 -0.0202,-0.0044 -0.031,-0.0044 -0.0613,0 -0.1109,0.0497 -0.1109,0.1109 0,0.043 0.0245,0.0804 0.0603,0.0987 0.0017,0.0058 0.0039,0.0114 0.0066,0.0167 0,0.0001 0,0.0001 0.0001,0.0002l0 0c0.0162,0.0318 0.0492,0.0536 0.0873,0.0536 0.0166,0 0.0322,-0.0041 0.0458,-0.0114 0.0101,-0.0054 0.0137,-0.018 0.008,-0.0279zm-0.0722 -0.1093l0 0c0.0138,0 0.0226,0.0099 0.0209,0.0196 -0.0038,0.0217 -0.0386,0.0302 -0.0549,0.0258 -0.004,-0.0154 0.0083,-0.0453 0.034,-0.0453z"/>
+    <g>
+     <path fill="black" fill-rule="nonzero" mask="url(#id0)" d="M0.2276 0.2942c-0.0088,-0.0031 -0.0166,-0.0082 -0.0229,-0.0148 0,0 -0.0303,0.0005 -0.0522,-0.0122 0.0036,0.0125 0.0097,0.0239 0.0176,0.0337l0.0575 -0.0068z"/>
+    </g>
+    <path fill="black" fill-rule="nonzero" mask="url(#id2)" d="M0.1942 0.2345c-0.0012,-0.0047 -0.0009,-0.0107 0.0008,-0.0168l-0.0387 -0.0256c-0.0022,0.0055 -0.0037,0.0111 -0.0045,0.0167 0.0136,0.0208 0.0424,0.0257 0.0424,0.0257z"/>
+   </g>
+  </g>
+ </g>
+</svg>

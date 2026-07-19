@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Kalkulator A3+ | @ageng.sg</title>
+    <meta
+      name="description"
+      content="Hitung jumlah objek yang muat dalam area A3+ atau Kiscut secara otomatis."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#cf1f25" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Kalkulator A3+" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <img src="logo.svg" alt="gelogo" class="brand-mark" />
+          <div class="brand-text">
+            <span class="brand-eyebrow">Cutting Layout Tool</span>
+            <h1>Kalkulator A3<span class="plus">+</span></h1>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle nav-toggle"
+            type="button"
+            aria-label="Ganti tema gelap/terang"
+          >
+            <svg
+              class="icon-sun"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              ></path>
+            </svg>
+            <svg
+              class="icon-moon"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="http://instagram.com/ageng.sg" target="_blank" id="ig-btn">
+            <span>@ageng.sg</span>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel controls" aria-label="Input ukuran">
+          <div class="crop crop-tl" aria-hidden="true"></div>
+          <div class="crop crop-tr" aria-hidden="true"></div>
+          <div class="crop crop-bl" aria-hidden="true"></div>
+          <div class="crop crop-br" aria-hidden="true"></div>
+
+          <div class="field-row">
+            <label class="field">
+              <span class="field-label">Panjang Objek</span>
+              <div class="field-input">
+                <input
+                  id="w"
+                  type="text"
+                  placeholder="0.0"
+                  inputmode="decimal"
+                  pattern="[0-9]*[.,]?[0-9]*"
+                />
+                <span class="unit">cm</span>
+              </div>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Lebar Objek</span>
+              <div class="field-input">
+                <input
+                  id="h"
+                  type="text"
+                  placeholder="0.0"
+                  inputmode="decimal"
+                  pattern="[0-9]*[.,]?[0-9]*"
+                />
+                <span class="unit">cm</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span class="field-label">Area Cetak</span>
+              <div class="field-input">
+                <select id="area">
+                  <option value="a3plus" selected>
+                    A3+ &nbsp;&middot;&nbsp; 31 &times; 47 cm
+                  </option>
+                  <option value="kiscut">
+                    Kiscut &nbsp;&middot;&nbsp; 30 &times; 46 cm
+                  </option>
+                </select>
+              </div>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Jarak Antar Objek</span>
+              <div class="field-input">
+                <input
+                  id="spacing"
+                  type="text"
+                  value="0"
+                  inputmode="decimal"
+                  pattern="[0-9]*[.,]?[0-9]*"
+                />
+                <span class="unit">cm</span>
+              </div>
+            </label>
+          </div>
+
+          <p class="field-hint">
+            Jarak kosong di antara tiap objek saat disusun.
+          </p>
+        </section>
+
+        <!-- HASIL -->
+        <section
+          class="results-grid"
+          id="results"
+          aria-label="Hasil perhitungan"
+        ></section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Dibuat untuk efisiensi layout cutting &amp; print.</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("sw.js").catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
